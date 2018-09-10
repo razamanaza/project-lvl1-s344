@@ -2,7 +2,7 @@
   "name": "brain-games",
   "version": "1.0.0",
   "description": "",
-  "main": "brain-games.js",
+  "main": "src/bin/brain-games.js",
   "scripts": {
     "babel-node": "babel-node"
   },
