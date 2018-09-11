@@ -12,7 +12,8 @@
   "scripts": {
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "eslint": "node_modules/eslint/bin/eslint.js -c .eslintrc.yml --fix src/**"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,12 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.0"
+  },
+  "dependencies": {
     "readline-sync": "^1.4.9"
   }
 }
