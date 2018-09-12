@@ -7,7 +7,7 @@ const username = index.startGame('Answer "yes" if number even otherwise answer "
 export default () => {
   let finalGreet = 'Congratulations,';
   for (let i = 0; i < 3; i += 1) {
-    const question = index.generateNum();
+    const question = index.getRandom(1, 100);
     const answer = index.askQuestion(question);
     if (answer !== correctAnswer(question)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer(question)}'.`);

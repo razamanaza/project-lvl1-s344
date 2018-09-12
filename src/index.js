@@ -14,4 +14,4 @@ export const askQuestion = (question) => {
   return (readlineSync.question('Your answer: '));
 };
 
-export const generateNum = () => (Math.floor(Math.random() * 99 - 1));
+export const getRandom = (min, max) => (Math.floor(Math.random() * (max - min)) + min);
