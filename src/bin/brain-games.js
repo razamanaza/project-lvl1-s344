@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import getUsername from '..';
+import * as index from '..';
 
-console.log('Welcome to the Brain Games!');
-const username = getUsername();
-console.log(`Hello, ${username}!`);
+index.startGame();
