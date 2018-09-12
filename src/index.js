@@ -13,3 +13,5 @@ export const askQuestion = (question) => {
   console.log(`Question: ${question}`);
   return (readlineSync.question('Your answer: '));
 };
+
+export const generateNum = () => (Math.floor(Math.random() * 99 - 1));
