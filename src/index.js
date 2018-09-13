@@ -16,8 +16,8 @@ export const askQuestion = (question) => {
   return (readlineSync.question('Your answer: '));
 };
 
-export const startGame = (getQuestion, getQuestionString, getCorrectAnswer) => {
-  const username = startIntro();
+export const startGame = (getQuestion, getQuestionString, getCorrectAnswer, greeting) => {
+  const username = startIntro(greeting);
   for (let i = 0; i < 3; i += 1) {
     const question = getQuestion();
     const answer = askQuestion(getQuestionString(question));

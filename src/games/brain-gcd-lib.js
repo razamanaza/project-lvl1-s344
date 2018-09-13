@@ -16,5 +16,6 @@ const getCorrectAnswer = question => (
 
 
 export default () => {
-  index.startGame(getQuestion, getQuestionString, getCorrectAnswer);
+  const greeting = 'Find the greatest common divisor of given numbers.';
+  index.startGame(getQuestion, getQuestionString, getCorrectAnswer, greeting);
 };

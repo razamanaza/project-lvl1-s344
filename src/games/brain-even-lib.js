@@ -5,5 +5,6 @@ const getQuestion = () => (index.getRandom(0, 100));
 const getQuestionString = question => (question.toString());
 
 export default () => {
-  index.startGame(getQuestion, getQuestionString, getCorrectAnswer);
+  const greeting = 'Answer "yes" if number even otherwise answer "no".';
+  index.startGame(getQuestion, getQuestionString, getCorrectAnswer, greeting);
 };

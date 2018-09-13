@@ -41,5 +41,6 @@ const getCorrectAnswer = (question) => {
 };
 
 export default () => {
-  index.startGame(getQuestion, getQuestionString, getCorrectAnswer);
+  const greeting = 'What is the result of the expression?';
+  index.startGame(getQuestion, getQuestionString, getCorrectAnswer, greeting);
 };
