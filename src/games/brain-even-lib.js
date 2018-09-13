@@ -1,21 +1,9 @@
 import * as index from '..';
 
-const correctAnswer = num => ((num % 2 === 0) ? 'yes' : 'no');
-
-const username = index.startGame('Answer "yes" if number even otherwise answer "no".');
+const getCorrectAnswer = num => ((num % 2 === 0) ? 'yes' : 'no');
+const getQuestion = () => (index.getRandom(0, 100));
+const getQuestionString = question => (question.toString());
 
 export default () => {
-  let finalGreet = 'Congratulations,';
-  for (let i = 0; i < 3; i += 1) {
-    const question = index.getRandom(1, 100);
-    const answer = index.askQuestion(question);
-    if (answer !== correctAnswer(question)) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer(question)}'.`);
-      finalGreet = "Let's try again,";
-      break;
-    }
-    console.log('Correct!');
-  }
-
-  console.log(`${finalGreet} ${username}!`);
+  index.startGame(getQuestion, getQuestionString, getCorrectAnswer);
 };
