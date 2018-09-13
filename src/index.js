@@ -18,17 +18,16 @@ export const askQuestion = (question) => {
 
 export const startGame = (getQuestion, getQuestionString, getCorrectAnswer) => {
   const username = startIntro();
-  let finalGreet = 'Congratulations,';
   for (let i = 0; i < 3; i += 1) {
     const question = getQuestion();
     const answer = askQuestion(getQuestionString(question));
     if (answer !== getCorrectAnswer(question)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${getCorrectAnswer(question)}'.`);
-      finalGreet = "Let's try again,";
-      break;
+      console.log(`Let's try again, ${username}`);
+      return;
     }
     console.log('Correct!');
   }
 
-  console.log(`${finalGreet} ${username}!`);
+  console.log(`Congratulations, ${username}!`);
 };
