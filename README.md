@@ -9,3 +9,6 @@ Install and usage example of brain-even game
 
 Install and usage example of brain-even game
 <https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc>
+
+Install and usage example of brain-gcd game
+<https://asciinema.org/a/TuQGUiuyByeLIIDJOo0ZKZpZu>
