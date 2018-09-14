@@ -1,6 +1,6 @@
 {
   "name": "brain-games-razamanaza",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "",
   "main": "src/bin/brain-games.js",
   "bin": {
