@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 import { car, cdr } from 'hexlet-pairs';
 
 export const getRandom = (min, max) => (Math.floor(Math.random() * (max - min)) + min);
