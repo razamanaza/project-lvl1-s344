@@ -7,7 +7,7 @@ Codeclimate bages
 Install and usage example of brain-even game
 <https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz>
 
-Install and usage example of brain-even game
+Install and usage example of brain-calc game
 <https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc>
 
 Install and usage example of brain-gcd game
@@ -15,3 +15,6 @@ Install and usage example of brain-gcd game
 
 Install and usage example of brain-balance game
 <https://asciinema.org/a/6jNyvwnwbJMcXbledTegTgAg2>
+
+Install and usage example of brain-progression game
+<https://asciinema.org/a/gafpF3kPt3BsO7Sss1Zsr1ct5>
