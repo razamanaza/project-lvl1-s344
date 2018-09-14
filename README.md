@@ -12,3 +12,6 @@ Install and usage example of brain-even game
 
 Install and usage example of brain-gcd game
 <https://asciinema.org/a/TuQGUiuyByeLIIDJOo0ZKZpZu>
+
+Install and usage example of brain-balance game
+<https://asciinema.org/a/6jNyvwnwbJMcXbledTegTgAg2>
