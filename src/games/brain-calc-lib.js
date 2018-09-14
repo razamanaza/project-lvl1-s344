@@ -13,7 +13,7 @@ const getOperator = (num) => {
     case 2:
       return '*';
     default:
-      return undefined;
+      return 'Unexpected operator';
   }
 };
 
@@ -28,19 +28,28 @@ const getQuestion = () => {
 const getQuestionString = question => (`${car(car(question))} ${cdr(question)} ${cdr(car(question))}`);
 
 const getCorrectAnswer = (question) => {
+  const firstNum = car(car(question));
+  const secondNum = cdr(car(question));
   switch (cdr(question)) {
     case '-':
-      return ((car(car(question)) - cdr(car(question))).toString());
+      return ((firstNum - secondNum).toString());
     case '+':
-      return ((car(car(question)) + cdr(car(question))).toString());
+      return ((firstNum + secondNum).toString());
     case '*':
-      return ((car(car(question)) * cdr(car(question))).toString());
+      return ((firstNum * secondNum).toString());
     default:
-      return undefined;
+      return 'Unexpected operator';
   }
+};
+
+const getQuestionAnswer = () => {
+  const question = getQuestion();
+  const correctAnswer = getCorrectAnswer(question);
+  const qa = cons(getQuestionString(question), correctAnswer);
+  return qa;
 };
 
 export default () => {
   const greeting = 'What is the result of the expression?';
-  index.startGame(getQuestion, getQuestionString, getCorrectAnswer, greeting);
+  index.startGame(getQuestionAnswer, greeting);
 };

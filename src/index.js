@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from 'hexlet-pairs';
 
 export const getRandom = (min, max) => (Math.floor(Math.random() * (max - min)) + min);
 
@@ -16,13 +17,16 @@ export const askQuestion = (question) => {
   return (readlineSync.question('Your answer: '));
 };
 
-export const startGame = (getQuestion, getQuestionString, getCorrectAnswer, greeting) => {
+// Надеюсь правильно понял замечания. По другому реализацию придумать не могу.
+export const startGame = (getQuestionAnswer, greeting) => {
   const username = startIntro(greeting);
   for (let i = 0; i < 3; i += 1) {
-    const question = getQuestion();
-    const answer = askQuestion(getQuestionString(question));
-    if (answer !== getCorrectAnswer(question)) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${getCorrectAnswer(question)}'.`);
+    const qa = getQuestionAnswer();
+    const question = car(qa);
+    const userAnswer = askQuestion(question);
+    const correctAnswer = cdr(qa);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${username}`);
       return;
     }
