@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import * as index from '..';
+import selectGame from '../games/brain-games-lib';
 
-index.startIntro();
+selectGame();

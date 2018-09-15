@@ -18,6 +18,6 @@ const getQuestionAnswer = () => {
 };
 
 export default () => {
-  const greeting = 'Find the greatest common divisor of given numbers.';
+  const greeting = 'Is this number prime?';
   index.startGame(getQuestionAnswer, greeting);
 };
