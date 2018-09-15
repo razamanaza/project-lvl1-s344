@@ -18,3 +18,6 @@ Install and usage example of brain-balance game
 
 Install and usage example of brain-progression game
 <https://asciinema.org/a/gafpF3kPt3BsO7Sss1Zsr1ct5>
+
+Install and usage example of brain-prime game
+<https://asciinema.org/a/WDIid4RFxfW6c415d1fO5alNQ>
