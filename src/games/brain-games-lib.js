@@ -35,6 +35,5 @@ export default () => {
       startPrime();
       break;
     default:
-      return;
   }
 };
