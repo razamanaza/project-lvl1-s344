@@ -8,16 +8,16 @@ Install and usage example of brain-even game
 [![asciicast](https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz.png)](https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz)
 
 Install and usage example of brain-calc game
-<https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc>
+[![asciicast](https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc.png)](https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc)
 
 Install and usage example of brain-gcd game
-<https://asciinema.org/a/TuQGUiuyByeLIIDJOo0ZKZpZu>
+[![asciicast](https://asciinema.org/a/TuQGUiuyByeLIIDJOo0ZKZpZu.png)](https://asciinema.org/a/TuQGUiuyByeLIIDJOo0ZKZpZu)
 
 Install and usage example of brain-balance game
-<https://asciinema.org/a/6jNyvwnwbJMcXbledTegTgAg2>
+[![asciicast](https://asciinema.org/a/6jNyvwnwbJMcXbledTegTgAg2.png)](https://asciinema.org/a/6jNyvwnwbJMcXbledTegTgAg2)
 
 Install and usage example of brain-progression game
-<https://asciinema.org/a/gafpF3kPt3BsO7Sss1Zsr1ct5>
+[![asciicast](https://asciinema.org/a/gafpF3kPt3BsO7Sss1Zsr1ct5.png)](https://asciinema.org/a/gafpF3kPt3BsO7Sss1Zsr1ct5)
 
 Install and usage example of brain-prime game
-<https://asciinema.org/a/WDIid4RFxfW6c415d1fO5alNQ>
+[![asciicast](https://asciinema.org/a/WDIid4RFxfW6c415d1fO5alNQ.png)](https://asciinema.org/a/WDIid4RFxfW6c415d1fO5alNQ)
