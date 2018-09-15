@@ -1,43 +1,30 @@
 import * as index from '..';
 import { cons } from 'hexlet-pairs';
 
-const getSortedNum = (string, result) => {
-  if (string.length <= 0) return (result);
-  let smallestDigit = 9;
-  let indexOfSmallestDigit = 0;
-  for (let i = 0; i < string.length; i += 1) {
-    if (string[i] < smallestDigit) {
-      smallestDigit = string[i];
-      indexOfSmallestDigit = i;
-    }
-  }
-  const newString = `${string.slice(0, indexOfSmallestDigit)}${string.slice(indexOfSmallestDigit + 1)}`;
-  return getSortedNum(newString, `${result}${string[indexOfSmallestDigit]}`);
+const getSum = (numStr, count, sum) => {
+  if (count <= 0) return sum;
+  return getSum(numStr.slice(0, -1), count - 1, sum + Number(numStr[numStr.length - 1]));
 };
 
-const getBalancedNum = (string) => {
-  const sorted = getSortedNum(string, '');
-  if ((Number(sorted[sorted.length - 1]) - Number(sorted[0])) <= 1) return sorted;
-
-  let result = '';
-  for (let i = 0; i < Math.ceil(sorted.length / 2); i += 1) {
-    if (i === sorted.length - 1 - i) {
-      result += sorted[i];
-    } else {
-      const sum = (Number(sorted[i]) + Number(sorted[sorted.length - 1 - i]));
-      const left = Math.floor(sum / 2);
-      const right = sum - left;
-      result += left;
-      result += right;
-    }
-  }
-
-  return getBalancedNum(result);
+const getBalancedNum = (num) => {
+  const numDigits = num.toString().length;
+  const numSum = getSum(num.toString(), numDigits, 0);
+  const min = Math.floor(numSum / numDigits);
+  const max = min + 1;
+  const maxDigits = numSum - min * numDigits;
+  const minDigits = numDigits - maxDigits;
+  const iter = (str, iterNum, digits) => {
+    if (digits <= 0) return str;
+    return iter(`${str}${iterNum.toString()}`, iterNum, digits - 1);
+  };
+  const part1 = iter('', min, minDigits).toString();
+  const part2 = iter('', max, maxDigits).toString();
+  return Number(`${part1}${part2}`);
 };
 
 const getQuestionAnswer = () => {
   const question = index.getRandom(10, 1000);
-  const correctAnswer = getBalancedNum(question.toString());
+  const correctAnswer = getBalancedNum(question);
   const qa = cons(question.toString(), correctAnswer.toString());
   return qa;
 };
