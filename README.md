@@ -5,7 +5,7 @@ Codeclimate bages
 [![Build Status](https://travis-ci.org/razamanaza/project-lvl1-s344.svg?branch=master)](https://travis-ci.org/razamanaza/project-lvl1-s344)
 
 Install and usage example of brain-even game
-<https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz>
+[![asciicast](https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz.png)](https://asciinema.org/a/PJn7gB0NQmse7ZFppzfPwU7oz)
 
 Install and usage example of brain-calc game
 <https://asciinema.org/a/Fbm2Z3NDrIIpvlza5TskCUuqc>
